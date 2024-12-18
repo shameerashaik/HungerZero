@@ -22,7 +22,7 @@ const RestaurantForm = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('/hungerzero/clientpisubmit', formData);
+      const response = await axios.post("http://localhost:8080/hungerzero/clientpisubmit", formData);
 
       console.log('Form submitted successfully:', response.data);
 
